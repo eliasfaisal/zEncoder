@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    background: #004b67;
+}
+*{
+    user-select:none;
+    -webkit-user-drag:none;
+}
+
+#ext {
+    width: 40px;
+    text-align: center;
+}
+
+.storeinput {
+    background-color: #003c52;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-family: calibri;
+    height: 30px;
+    padding: 6px;
+}
+
+input#filename_store {
+    width: 250px;
+}
+
+.area {
+    text-align: center;
+}
+
+.childwndtxt {
+    text-align: center;
+    margin: 25px;
+}
+
+.caption {font-size: 35px;}
+
+.childwndtxtholder {
+    color: #fff;
+    font-family: calibri;
+}
+
+.childwndtxtholder {
+    width: -webkit-fill-available;
+    margin: auto;
+}
+
+.toppartspect {
+    display: flex;
+}
+
+.toppart,.bottompart {
+    width: 100%;
+    height: fit-content;
+}
+
+.bottompart {
+    display: flex;
+}
+
+.childwnd {
+    background: #005979;
+    width: 500px;
+    height: 200px;
+    border-radius: 6px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#confirmfile,#storefile {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0000007d;
+    z-index: 1;
+}
+
+#header {
+    width: 100%;
+    height: 40;
+    background: #005979;
+    display: flex;
+}
+
+.ta {
+    margin: 5px 0px 5px 0px;
+    border: none;
+    resize: none;
+    background: #005979;
+    /* display: -webkit-inline-box; */
+    outline: none;
+    border-radius: 6px;
+    width: -webkit-fill-available;
+    color: #fff;
+    user-select: none;
+}
+
+textarea#output {
+    margin-left: 2.5px;
+    margin-right: 5px;
+}
+
+textarea#input {
+    margin-left: 5px;
+    margin-right: 2.5px;
+}
+
+#holder {
+    width: 100%;
+    display: flex;
+}
+
+.btn {
+    height: 40;
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor:pointer;
+    border-radius: 6px;
+    font-family: calibri;
+}
+
+.childwndbtn {
+    background-color: #003c52;
+    height: fit-content;
+    padding: 5px 40px 5px 40px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+
+#childwndbtn_cancel {
+    margin-right: 223px;
+}
+
+#childwndbtn_cancel_store {
+    margin-right: 247px;
+}
+
+.btn:active {
+    background: #00000042;
+}
+
+#mode {
+    outline: none;
+    background-color: #003c52;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+}
+.ico_holder{
+    padding:5px;
+}
+.assetimg{
+    width:30px;
+    height:30px
+}
