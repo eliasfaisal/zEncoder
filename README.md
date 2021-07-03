@@ -94,9 +94,9 @@ here's an examples:
   *Generally until (F) there is a hidden zero as first digit:</br>
   F => 0F</br>
   6 => 06</br>
-  * Code Sample : 17</br>
-  * Map:</br>
   
+        * Code Sample : 17
+        * Map:
         +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
         | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | A | B | C | D | E | F |
         +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
