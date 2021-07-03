@@ -2,7 +2,7 @@
 ======
 Simple text converting tool, created with javascript.
 
-The library file is located at `Lib/zEnc.js` and compatible with `nodejs`.
+The lastest library file is located at `Lib/zEncoder-2.0.js` and compatible with `nodejs`.
 
 #### Supported Codecs
 
