@@ -1,8 +1,9 @@
 <img src="Assets/icon.png" align="left" /> zEncoder 
 ======
-Simple text converting tool, created with javascript.<br/>
-This Lib was just created for fun :D & under MIT License ([License](https://raw.githubusercontent.com/eliasfaisal/zEncoder/main/LICENSE))
-
+Simple text converting tool, created with javascript.
+<br/>
+<br/>
+This Lib was just created for fun 😉 & under MIT License ([License](https://raw.githubusercontent.com/eliasfaisal/zEncoder/main/LICENSE))<br/>
 The lastest library file is located at `Lib/zEncoder-2.0.js` and compatible with `nodejs`.
 
 #### Supported Codecs
