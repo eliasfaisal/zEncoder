@@ -50,6 +50,101 @@ zEncoder.HEX.decodeNumber;
 
 ```
 
+#### Codecs
+
+- Attbash
+<br/>A one direction encoding method, means that iteration loops inside the length<br/>
+and every cahracter is replace with the one the reversed direction and same index.<br/>
+here's an example:
+
+
+|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|
+|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+|Z|Y|X|W|V|U|T|S|R|Q|P|O|N|M|L|K|J|I|H|G|F|E|D|C|B|A|
+
+- Base64 & URI Component
+<br/>It's already built-in inside the VM, just going to check if the <br/>
+given text is either encodable or decodable.
+
+- YOLIOUS GAISAR
+<br/>Simply it's the char that's three blocks ahead.<br/>
+here's an examples:
+
+|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|
+|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|
+
+
+- Char Code
+<br/>Replacing every char with it's own string numbric code.<br/>
+here's an examples:
+
+|Letter|Code|
+|:--:|:--:|
+| A | 65 |
+| B | 66 |
+| C | 67 |
+| D | 68 |
+  
+- HEXADECIMAL (Base16)
+  <br/>Works with numbers, for 0 - 9 is same, from 10 - 15 is A - F<br/>
+  and the alghorithem loops this way.<br/>
+  </br>
+  here's an example:<br/>
+  *Generally until (F) there is a hidden zero as first digit:</br>
+  F => 0F</br>
+  6 => 06</br>
+  * Code Sample : 17</br>
+  * Map:</br>
+  
+        +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+        | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | A | B | C | D | E | F |
+        +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+                                                  B                   A
+                                                  |                   |
+                                                [1 1]                 +--------------[1 5] 
+                                                The left numbers continue,           We filled the first round,
+                                                continue the next round and          and there's 11 numbers left
+                                                secound digit is [A]                 the first digit 0 is now 1 
+        * In the end A & B and joined
+        so we get the result HEX(1A) for the int(26)
+
+
+- Binary
+</br>Wroks with Numbers, and only outputs 0 and 1 format,<br/>
+
+  - Encoding:
+  </br>Divides the number on 2 until it's value becomes 0;<br/>
+  every deviding procces number rest and the divided number are kept<br/>
+  every rest is going to be 0 or 1, and this is the binary data,<br/>
+  to full view it will be joined together every rest.<br/>
+  <br/>Example:
+  
+            Number = 11;
+            11 / 2 = 5 ; 1 (left)
+             5 / 2 = 2 ; 1 (left)
+             2 / 2 = 1 ; 0 (left)
+             1 / 2 = 0 ; 1 (left)
+
+            Final Binary Number is 1011 for integer 11.
+
+  - Decoding:
+  <br/>For every digit of the given binary number,<br/>
+  2 will be powered by the index of that number and<br/>
+  multplied with it's value (0 or 1) and finally <br/>
+  every digit is joined together to give the decimal <br/>
+  or integer number.<br/>
+  <br/>Example:
+  
+            String Number = "1001";
+            2^0 * 1 = 1
+            2^1 * 0 = 0
+            2^2 * 0 = 0
+            2^3 * 1 = 8 
+            -----------
+            +         9
+
+            Final Integer number is 9 for binary 1001
 
 
 #### Coming Upgrades & Versions
