@@ -24,5 +24,33 @@ B : `Built-n`
 |Hex|R|R|B|
 |Base64|B|B|B|
 
+#### Sample
+
+```javascript
+var text = "Hello World";
+var result = zEncoder.HEX.encode("Text"); // 48 65 6C 6C 6F 20 57 6F 72 6C 64
+```
+
+#### Numbers Part
+Hex & Binary Only Works with Numbers, and in strings they treat every letter <br/>
+by replacing it with it's own **`character code`**.<br/>
+more details and exaplaining are inside `Lib/zEncoder-2.0.js` as comments for every function.
+
+```javascript
+var num    = 8080;
+var result = zEncoder.HEX.encodeNumber(num) //1F09
+
+//Numbers Functions
+
+zEncoder.BINARY.encodeNumber;
+zEncoder.BINARY.decodeNumber;
+
+zEncoder.HEX.encodeNumber;
+zEncoder.HEX.decodeNumber;
+
+```
+
+
+
 #### Coming Upgrades & Versions
 - Python `3.9` alternative version (coming soon)
