@@ -8,7 +8,7 @@ The lastest library file is located at `Lib/zEncoder-2.0.js` and compatible with
 
 #### Supported Codecs
 
-zEncode was removed due to perforamnce and memory issues, bug can be found here [0d2562a](https://github.com/eliasfaisal/zEncoder/commit/0d2562aa4134a9d8c0b5241f8a55fb13b58f73c9) <br/>
+zEncode was removed due to perforamnce and memory issues, bug can be found here [cfa6ea6](https://github.com/eliasfaisal/zEncoder/commit/cfa6ea6783398c073cb5047291e498dc54472a1e) <br/>
 
 R : `Ready`<br/>
 B : `Built-n`
