@@ -73,13 +73,13 @@
             </div>
         </div>
         <select title="Coding Modes" id="mode">
-            <option v="1" txt="zEncoding (Default)" selected value="defualt">zEncoding (Default)</option>
-            <option v="7" txt="CharCode" value="charcode">CharCode</option>
-            <option v="2" txt="Atbash" value="attbash">Atbash</option>
-            <option v="3" txt="Binary" value="binary">Binary</option>
-            <option v="4" txt="URI Component" value="urlenc">URI Component</option>
-            <option v="5" txt="Yolious Gaisar" value="yolious">Yolious Gaisar</option>
-            <option v="6" txt="HEX" value="hex">Hex</option>
+            <option name="ATTBASH" txt="Attbash" selected value="defualt">Attbash</option>
+            <option name="BASE64" txt="Base64" value="BASE64">Base64</option>
+            <option name="URI" txt="URI Component" value="URI">URI Component</option>
+            <option name="YOLIOUS" txt="Yolious Gaisar" value="YOLIOUS">Yolious Gaisar</option>
+            <option name="CHARCODE" txt="Char Code" value="CHARCODE">Char Code</option>
+            <option name="HEX" txt="Hexadecimal" value="HEX">Hexadecimal</option>
+            <option name="BINARY" txt="Binary" value="BINARY">Binary</option>
         </select>
         <div style="position:absolute;top:0;right:0;display:flex;">
             <div class="btn" title="Clean Input&Output" id="clean">
@@ -97,6 +97,11 @@
                     <img src="Assets/store.png" class="assetimg">
                 </div>
             </div>
+            <div class="btn" title="Github Repo" id="git">
+                <div class="ico_holder">
+                    <img src="Assets/github.svg" class="assetimg">
+                </div>
+            </div>
         </div>
     </div>
     <!---->
@@ -104,5 +109,7 @@
         <textarea title="0KB" class="ta" id="input"></textarea>
         <textarea readonly="true" title="0KB" class="ta" id="output"></textarea>
     </div>
-    <script src="JS/main.js"></script>
+    <!-- Scripts -->
+    <script src="Lib/zEncoder-2.0.js"></script>
+    <script defer src="JS/main.js"></script>
 </body>
